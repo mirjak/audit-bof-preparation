@@ -37,13 +37,16 @@ Mechanisms defined by the working group are expected to support auditability wit
 The AUDIT working group is expected to produce:
 
 1. **Architecture for Autononomous Agent Auditing**
-An Informational RFC describing roles, trust relationships, and data flows for interoperable auditing, including the relationship between user-facing and system-facing audit signals.
+An Informational RFC describing roles, trust relationships, and data flows for interoperable auditing, including the relationship between user-facing and system-facing audit signals. This document might also identify needed protocol extensions. 
 
 2. **Audit Data Models and Semantics**
-One or more Standards Track RFCs defining data models for representing audit information, including interaction records, agent identity, delegation context, authorization state over time, and action provenance.
+One or more Standards Track RFC(s) defining data models for representing audit information, including interaction records, agent identity, delegation context, authorization state over time, and action provenance.
+The group will work on the minimal set of audit information and consider a registry to enable experimentation and fast deployment for additional data models.
 
 3. **Protocol Extensions or Profiles**
-One or more Standards Track RFCs specifying extensions to existing IETF protocols (e.g., HTTP, OAuth, or token formats) to convey audit-related information.
+One or more Standards Track RFCs specifying profiles of,  extensions to existing ot embodiment into existing IETF protocols (e.g., HTTP headers, OAuth token formats, attestation worksflows, or claims sets in other data items) to convey audit-related information.
+If this work in done in this working group or the respective protocol maintenance group depends on the protocols and needs to be considered on a case by case basis.
+The working group may also define protocol-independent data representations intended for use by non-IETF logging, telemetry, or audit systems, while avoiding standardization of those external systems themselves.
 
-4. **Best Practices for Deployment and Operation**
-An Informational or BCP document providing guidance for secure, interoperable, and privacy-aware auditing, including correlation across interaction types.
+5. **Best Practices for Deployment and Operation**
+An Informational or BCP document providing guidance for secure, interoperable, and privacy-aware auditing, including correlation across interaction types for different deployoment models and trust domains.
