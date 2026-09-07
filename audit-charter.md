@@ -25,12 +25,17 @@ The group will focus on architectures, protocol-layer specifications, and data r
 
 The working group will compose existing IETF building blocks for identity (WIMSE), attestation (RATS), authorization (OAuth family), transparency (SCITT), context propagation (W3C Trace Context), and conversation containers (vCon), and will define only the additional protocol elements, data models, and best practices needed to make these compose coherently for the AI agent case.
 
-The working group will not define auditing policies or compliance frameworks, but instead provide the technical building blocks needed to support them. Further, while the entities of a complex agents or workload system need to be identifiable, this group will not work on new identity primitives but rely on work in other groups or fora.
+
+The working group will not define auditing policies or compliance frameworks, but instead provide the technical building blocks needed to support them.
+Further, while the entities of a complex agents or workload system need to be identifiable, this group will not work on new identity primitives but rely on work in other groups or fora.
+
+The working group will treat privacy, confidentiality, selective disclosure and retention constraints as core design considerations.
+Mechanisms defined by the working group are expected to support auditability without requiring indiscriminate disclosure of prompts, user content, personal data, or unrelated execution context.
 
 ## Deliverables
 The AUDIT working group is expected to produce:
 
-1. **Architecture for AI Agent Auditing**
+1. **Architecture for Autononomous Agent Auditing**
 An Informational RFC describing roles, trust relationships, and data flows for interoperable auditing, including the relationship between user-facing and system-facing audit signals.
 
 2. **Audit Data Models and Semantics**
