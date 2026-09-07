@@ -9,11 +9,6 @@ This introduces challenges for auditability, accountability, and transparency, i
 * Inconsistent capture of delegation relationships, dynamic authorization context, and identity transitions
 * Cross-domain interactions lack interoperable means to exchange or verify audit-relevant information about the participating agents and their interactions
 
-Agents participate in two distinct classes of interactions that must be audited:
-
-* User-facing interactions, such as prompts, conversations, and approvals, capturing user intent and human-in-the-loop decisions
-* System-facing interactions, such as API calls, tool usage, and delegation to other agents or services
-
 Effective auditing requires linking user intent to resulting system actions across protocol and administrative boundaries. While traditional workflows support evolving authorization, these transitions are usually explicit and predefined. Agent systems introduce dynamic, fine-grained authorization changes that arise during execution, driven by agent decisions, delegation, and human interaction. Auditing must therefore capture authorization as a time-evolving state and correlate these transitions across interactions and domains.
 
 Additionally, Agent behavior may be non-deterministic and not fully predefined, requiring auditing mechanisms to capture execution context and structure as they emerge. 
