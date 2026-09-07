@@ -19,6 +19,8 @@ Effective auditing requires linking user intent to resulting system actions acro
 Additionally, Agent behavior may be non-deterministic and not fully predefined, requiring auditing mechanisms to capture execution context and structure as they emerge. 
 Auditing must also distinguish between user, agent, and service identities, and ensure audit data can be selectively disclose such that it remains interpretable across systems without shared assumptions.
 
+Further, audit information must be verifiable by a party that trusts neither the agent nor its operator. That property is what separates audit records from most existing logging.
+
 ## Scope and Goals
 The AUDIT working group will define interoperable mechanisms for auditing and accountability of Agents and delegated systems across Internet protocols.
 
