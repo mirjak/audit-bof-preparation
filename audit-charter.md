@@ -35,6 +35,7 @@ An Informational RFC describing roles, trust relationships, and data flows for i
 
 2. **Audit Data Models and Semantics**
 One or more Standards Track RFC(s) defining data models for representing audit information, including interaction records, agent identity, delegation context, authorization state over time, and action provenance.
+The group will work on the minimal set of audit information and consider a registry to enable experimentation and fast deployment for additional data models.
 
 3. **Protocol Extensions or Profiles**
 One or more Standards Track RFCs specifying profiles of,  extensions to existing ot embodiment into existing IETF protocols (e.g., HTTP headers, OAuth token formats, attestation worksflows, or claims sets in other data items) to convey audit-related information.
