@@ -36,7 +36,13 @@ Which (if any) entirely new protocols or practices are required:
 Data model for records
 Open source projects (if any) implementing this work:
 
-Potentially logging frameworks like OpenTelemetry (TBD)
+Implementers who responded to the question in issue #9 of this repository:
+
+- Agent Passport System (APS), Apache-2.0, draft-pidlisnyi-aps. Published on npm and PyPI, with a conformance suite of canonical-JSON fixtures that a verifier in any language can check for byte-parity.
+- Agent Action Capsule, Apache-2.0 and BSD-3, draft-mih-scitt-agent-action-capsule. Reference implementations in Python and Go, 32 frozen conformance vectors, and producer adapters for eight agent frameworks.
+- Vaara, AGPL-3.0, draft-sirkkavaara-vaara-receipt. Released on PyPI and npm, with 50 conformance suites whose checkers import no Vaara code and recompute each verdict from its own case files.
+
+Potentially also logging frameworks like OpenTelemetry (TBD)
 
 # Agenda
 Intro and Motivation (10 mins)
