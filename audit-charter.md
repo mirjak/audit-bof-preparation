@@ -53,3 +53,16 @@ The working group may also define protocol-independent data representations inte
 
 4. **Best Practices for Deployment and Operation**
 An Informational or BCP document providing guidance for secure, interoperable, and privacy-aware auditing, including correlation across interaction types for different deployment models and trust domains.
+
+## Coordination
+
+Agent deployments already emit telemetry; audit records need to be usable in
+this context. The working group will therefore coordinate with other SDOs and
+projects working in the telemetry space to reduce the risk of gratuitous
+incompatibility, initially and specifically with W3C Trace Context, and with the
+OpenTelemetry project on semantic conventions for agent telemetry.
+
+Where an existing, broadly adopted semantic convention already names a concept
+that the audit data models need, the working group will reuse that name rather
+than define a synonym. Where the working group defines an element that telemetry
+systems can carry, it will seek a corresponding semantic convention mapping.
