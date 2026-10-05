@@ -31,7 +31,6 @@ This includes:
 * Specify records format for capturing delegation chains, authorization state over time, and identity transitions
 * Enabling consistent interpretation and correlation of audit data across domains and across long-running or distributed workflows while preserving user privacy or other sensitive data by extending or adapting existing communication protocols
 * Specify mechanisms and protocols to collect, aggregate, verify, and transparency log records, potentially by a third-party, independent auditor
-* Specify mechanisms for evaluating pre-ingestion record freshness, sequence continuity, and temporal admission before application state mutation or audit-store persistence
 
 The working group will compose existing building blocks for identity (WIMSE), attestation (RATS), authorization (OAuth family), transparency logging (SCITT), context propagation (e.g. W3C Trace Context or other context identifiers), and privacy-protecting profiles of conversation containers (vCon), and will define only an architecture including interfaces to and profiles of the auditing components, as well as the additional protocol elements, data models, and best practices needed to make these compose coherently for the agent auditing case.
 
@@ -46,6 +45,8 @@ The AUDIT working group is expected to produce:
 
 1. **Architecture for Autonomous Agent Auditing**
 An Informational RFC describing roles, trust relationships, and data flows for interoperable auditing, including the relationship between inter-domain audit entities and signals. This document might also identify needed protocol extensions. 
+
+Where audit records rely on externally defined temporal evidence, the architecture may describe how that evidence is referenced and related to the audited interaction, including its source, time scale, stated uncertainty, binding to the event, and verification outcome. This does not define a new clock-synchronization or timestamping mechanism or mandate a particular protocol.
 
 2. **Audit Data Models and Semantics**
 One or more Standards Track RFC(s) that identify and reuse existing or specify new IETF data models that can represent audit information about agents and delegated systems (e.g., interaction records, references to the identities of participating entities, delegation context, authorization state over time, or action provenance).
