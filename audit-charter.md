@@ -19,7 +19,7 @@ Additionally, agent behavior may be non-deterministic and not fully predefined, 
 Auditing must also distinguish between user, agent, and service identities, and ensure audit data can be selectively disclosed such that it remains interpretable across systems without shared assumptions.
 
 Further, audit information must be verifiable by a party that trusts neither the agent nor its operator. That property is what separates audit records from most existing log mechanisms.
-Verification has to cover what is absent as well as what is present: an auditor must be able to detect records that were withheld, altered, or created after the fact, including by the operator of the audit store. This is why records are committed to transparency logs, and why the consistency of a log over time must be checkable, including by independent witnesses, rather than taken on trust from its operator.
+Verification needs to account for missing evidence as well as available records, including possible withholding, alteration, or false claims of prior existence by an Audit Store operator. Transparency logs support verification of commitments to registered records and append-only consistency, including checks by independent witnesses. Detection of omissions or backdating additionally depends on the applicable record production, observation coverage, timing, and evidence availability mechanisms and assumptions; log inclusion and consistency alone do not establish completeness.
 
 ## Scope and Goals
 
