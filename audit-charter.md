@@ -19,6 +19,7 @@ Additionally, agent behavior may be non-deterministic and not fully predefined, 
 Auditing must also distinguish between user, agent, and service identities, and ensure audit data can be selectively disclosed such that it remains interpretable across systems without shared assumptions.
 
 Further, audit information must be verifiable by a party that trusts neither the agent nor its operator. That property is what separates audit records from most existing log mechanisms.
+Verification has to cover what is absent as well as what is present: an auditor must be able to detect records that were withheld, altered, or created after the fact, including by the operator of the audit store. This is why records are committed to transparency logs, and why the consistency of a log over time must be checkable, including by independent witnesses, rather than taken on trust from its operator.
 
 ## Scope and Goals
 
@@ -30,6 +31,7 @@ The group will address the mechanisms enabling systems to record, exchange, and 
 * Specify records format for capturing delegation chains, authorization state over time, and identity transitions
 * Enabling consistent interpretation and correlation of audit data across domains and across long-running or distributed workflows while preserving user privacy or other sensitive data by extending or adapting existing communication protocols
 * Specify mechanisms and protocols to collect, aggregate, verify, and transparently log records, potentially by a third-party, independent auditor
+* Specify how a record carries proof of its inclusion in a transparency log and of the time it was logged, so that it can be verified later without contacting the log, and without depending on a single log operator or timestamping service
 
 The working group will compose existing building blocks for identity (WIMSE), attestation (RATS), authorization (OAuth family), transparency logging (SCITT), context propagation (W3C Trace Context or other context identifiers), and privacy-protecting profiles of conversation containers (vCon). The WG will focus on defining the interfaces to and profiles of the auditing components, as well as the additional protocol elements, data models, and best practices needed to integrate them coherently for the agent auditing case.
 
