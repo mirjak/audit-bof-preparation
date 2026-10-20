@@ -45,6 +45,8 @@ The AUDIT working group is expected to produce:
 1. **Architecture for Autonomous Agent Auditing**
 An Informational RFC describing roles, trust relationships, and data flows for interoperable auditing, including the relationship between inter-domain audit entities and signals. This document might also identify needed protocol extensions. 
 
+Where audit records rely on externally defined temporal evidence, the architecture may describe how that evidence is referenced and related to the audited interaction, including its source, time scale, stated uncertainty, binding to the event, and verification outcome. This does not define a new clock-synchronization or timestamping mechanism or mandate a particular protocol.
+
 2. **Audit Data Models and Semantics**
 One or more Standards Track RFC(s) that identify and reuse existing or specify new IETF data models that can represent audit information about agents and delegated systems (e.g., interaction records, references to the identities of participating entities, delegation context, authorization state over time, or action provenance).
 If existing data models are identified the RFC(s) might create profiles that scope them to a degree of disclosure that is appropriate for audits.
