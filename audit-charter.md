@@ -39,6 +39,27 @@ Further, while the entities of a complex agent or workload system need to be ide
 The working group will treat privacy, confidentiality, selective disclosure and retention constraints as core design considerations.
 Mechanisms defined by the working group are expected to support auditability without requiring indiscriminate disclosure of prompts, user content, personal data, or unrelated execution context.
 
+## Out-Of-Scope
+
+* Auditing of model training
+The AUDIT work focuses on auditing agent workload at run time and provide audit records about actions taken by agents. This may include interactions with the model but not the model training phase that happens before and interaction is initiated.
+
+* Interactive/real-time reasoning or enforcement of agent behavior
+The AUDIT work focuses on post-hoc auditing. Audit records could also be used during the interaction phase and this might not be precluded by the audit work, however, the initial charter focus is on the post-hoc case.
+
+* How and when to create the records 
+The AUDIT work is proposed to be is focused on collection and correlation or records in a record-type agnostic way. The concrete auditing use case defines what kind of record is needed and which information needs to be recorded. The audit work provide provide a way to communicate requirements on what is needed but when and how exactly the record is created and but which entity is out of scope.
+
+* Requirements on the auditing system itself
+While it might be useful to enable a way to communicate requirements of an auditing system on the content and format of records, the actual needs of different auditing use cases vary widely and do not need to be standardized.
+
+* Session or context management
+While records could also be collected in-band with the agent communication, records are created independently of the session state and therefore any work on session or context management is expected to happen in the agentproto working group.
+
+* Authorization and delegation mechanism or extensions
+Capturing authorization state is essential for auditing, however, the authorization process or any needed extension to the authorization process are not in scope the for AUDIT group. This work is likely to happen in the OATH working group.
+
+
 ## Deliverables
 The AUDIT working group is expected to produce:
 
