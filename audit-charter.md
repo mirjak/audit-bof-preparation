@@ -43,17 +43,14 @@ Mechanisms defined by the working group are expected to support auditability wit
 The AUDIT working group is expected to produce:
 
 1. **Architecture for Autonomous Agent Auditing**
-An Informational RFC describing roles, trust relationships, and data flows for interoperable auditing, including the relationship between inter-domain audit entities and signals. This document might also identify needed protocol extensions. 
+An Informational RFC describing roles, trust relationships, and data flows for interoperable auditing, including the relationship between inter-domain audit entities and signals. The document will also provide guidance for secure, interoperable, and privacy-aware auditing across different deployment models and trust domains. This document might also identify needed protocol extensions.
 
 2. **Audit Data Models and Semantics**
 One or more Standards Track RFC(s) that identify and reuse existing or specify new IETF data models that can represent audit information about agents and delegated systems (e.g., interaction records, references to the identities of participating entities, delegation context, authorization state over time, or action provenance).
 If existing data models are identified the RFC(s) might create profiles that scope them to a degree of disclosure that is appropriate for audits.
 The group will work on the minimal set of audit information and consider a registry to enable experimentation and fast deployment for additional data models.
-
-3. **Protocol Extensions or Profiles**
-One or more Standards Track RFCs specifying profiles of, extensions to, or embodiments into existing IETF protocols (e.g., HTTP headers, OAuth token formats, attestation workflows, or claims sets in other data items) to convey audit-related information.
-Whether this work is done in this working group or the respective protocol maintenance group depends on the protocols and needs to be considered on a case by case basis.
 The working group may also define protocol-independent data representations intended for use by non-IETF logging, telemetry, or audit systems, while avoiding standardization of those external systems themselves.
 
-4. **Best Practices for Deployment and Operation**
-An Informational or BCP document providing guidance for secure, interoperable, and privacy-aware auditing, including correlation across interaction types for different deployment models and trust domains.
+3. **Protocol Extensions or Profiles**
+One or more Standards Track RFCs specifying profiles of, extensions to, or embodiments into existing IETF protocols (e.g., HTTP headers, OAuth token formats, or attestation workflows) to convey audit-related information, reusing the data models from deliverable 2.
+Whether this work is done in this working group or the respective protocol maintenance group depends on the protocols and needs to be considered on a case by case basis.
