@@ -74,7 +74,10 @@ Capturing authorization state is essential for auditing, however, the authorizat
 The AUDIT working group is expected to produce:
 
 1. **Architecture for Autonomous Agent Auditing**
-An Informational RFC describing roles, trust relationships, and data flows for interoperable auditing, including the relationship between inter-domain audit entities and signals. This document might also identify needed protocol extensions and describe verification processes and requirements, including their limitations. This may include e.g. the need for profiling SCITT or describing how to register an audit record with a SCITT Transparency Service.
+An Informational RFC describing roles, trust relationships, and data flows for interoperable auditing, including the relationship between inter-domain audit entities and signals.
+The document will also provide guidance for secure, interoperable, and privacy-aware auditing across different deployment models and trust domains.
+This document might also identify needed protocol extensions and describe verification processes and requirements, including their limitations.
+This may include e.g. the need for profiling SCITT or describing how to register an audit record with a SCITT Transparency Service.
 
 2. **Audit Data Models and Semantics**
 One or more Standards Track RFC(s) that identify and reuse existing or specify new IETF data models that can represent audit information about agents and delegated systems (e.g., interaction records, references to the identities of participating entities, delegation context, authorization state over time, or action provenance). 
@@ -86,6 +89,5 @@ The working group may also define protocol-independent data representations inte
 3. **Protocol Extensions or Profiles**
 One or more Standards Track RFCs specifying profiles of, extensions to, or embodiments into existing IETF protocols (e.g., HTTP headers, OAuth token formats, or attestation workflows) to convey audit-related information, reusing the data models from deliverable 2. If possible, AUDIT should (re-)use an existing identifier for record correlation such as to be specified by the agentproto WG.
 Whether this work is done in this working group or the respective protocol maintenance group depends on the protocols and needs to be considered on a case by case basis.
+The working group may also define protocol-independent data representations intended for use by non-IETF logging, telemetry, or audit systems, while avoiding standardization of those external systems themselves.
 
-5. **Best Practices for Deployment and Operation**
-An Informational or BCP document providing guidance for secure, interoperable, and privacy-aware auditing, including correlation across interaction types for different deployment models and trust domains.
