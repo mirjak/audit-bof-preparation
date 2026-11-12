@@ -58,7 +58,7 @@ The AUDIT work focuses on post-hoc auditing. Audit records could also be used du
 
 * **How and when to create the records**: 
 The AUDIT work is proposed to be is focused on collection and correlation or records in a record-type agnostic way. The concrete auditing use case defines what kind of record is needed and which information needs to be recorded.
-The audit work provide provide a way to communicate requirements on what is needed but when and how exactly the record is created and but which entity is out of scope.
+The audit work provide provide a way to communicate requirements on what is needed but when and how exactly the record is created and but which entity is out of scope. Whether a record states the point in the interaction it describes is a question of record content and is not excluded here.
 
 * **Requirements on the auditing system itself**: 
 While it might be useful to enable a way to communicate requirements of an auditing system on the content and format of records, the actual needs of different auditing use cases vary widely and do not need to be standardized.
