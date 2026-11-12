@@ -79,6 +79,8 @@ The document will also provide guidance for secure, interoperable, and privacy-a
 This document might also identify needed protocol extensions and describe verification processes and requirements, including their limitations.
 This may include e.g. the need for profiling SCITT or describing how to register an audit record with a SCITT Transparency Service.
 
+Where audit records rely on externally defined temporal evidence, the architecture may describe how that evidence is referenced and related to the audited interaction, including its source, time scale, stated uncertainty, binding to the event, and verification outcome. This does not define a new clock-synchronization or timestamping mechanism or mandate a particular protocol.
+
 2. **Audit Data Models and Semantics**
 One or more Standards Track RFC(s) that identify and reuse existing or specify new IETF data models that can represent audit information about agents and delegated systems (e.g., interaction records, references to the identities of participating entities, delegation context, authorization state over time, or action provenance). 
 The record format specified in the VCON WG should be considered for auditing and the AUDIT WG should collaborate with the VCON WG on auditing-related requirements on the record format.
