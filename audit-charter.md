@@ -84,9 +84,9 @@ One or more Standards Track RFC(s) that identify and reuse existing or specify n
 The record format specified in the VCON WG should be considered for auditing and the AUDIT WG should collaborate with the VCON WG on auditing-related requirements on the record format.
 This applies in general - if existing data models are identified, the AUDIT working group might create profiles that scope them to a degree of disclosure that is appropriate for audits.
 The first data model is expected to be a record of an agent action: the acting entity, the authorization and delegation it acted under, and the effect that followed.
-Each data model specification will define a verification procedure that a party holding only the records and pinned verification material (such as keys and transparency log checkpoints) can run offline, without contacting the record producer or its operator.
+Each specification of an audit record data model will define a verification procedure that a party holding only the records and pinned verification material (such as keys and transparency log checkpoints) can run offline, without contacting the record producer or its operator.
 The group may also define online verification profiles.
-Each data model will be accompanied by test vectors that give the expected verification result for valid and invalid records.
+Each audit record data model will be accompanied by test vectors that give the expected verification result for valid and invalid records.
 The group will work on the minimal set of audit information and consider a registry to enable experimentation and fast deployment for additional data models.
 The working group may also define protocol-independent data representations intended for use by non-IETF logging, telemetry, or audit systems, while avoiding standardization of those external systems themselves.
 
