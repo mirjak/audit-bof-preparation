@@ -83,7 +83,7 @@ This may include e.g. the need for profiling SCITT or describing how to register
 One or more Standards Track RFC(s) that identify and reuse existing or specify new IETF data models that can represent audit information about agents and delegated systems (e.g., interaction records, references to the identities of participating entities, delegation context, authorization state over time, or action provenance). 
 The record format specified in the VCON WG should be considered for auditing and the AUDIT WG should collaborate with the VCON WG on auditing-related requirements on the record format.
 This applies in general - if existing data models are identified, the AUDIT working group might create profiles that scope them to a degree of disclosure that is appropriate for audits.
-The first data model is expected to be a record of an agent action: the acting entity, the authorization and delegation it acted under, and the effect that followed.
+The first data model is expected to be a record of an agent action: the acting entity, a reference to the user or other party it acted on behalf of, the authorization and delegation it acted under, and the effect that followed.
 Each specification of an audit record data model will define a verification procedure that a party holding only the records and pinned verification material (such as keys and transparency log checkpoints) can run offline, without contacting the record producer or its operator.
 The group may also define online verification profiles.
 Each audit record data model will be accompanied by test vectors that give the expected verification result for valid and invalid records.
