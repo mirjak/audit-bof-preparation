@@ -83,6 +83,10 @@ This may include e.g. the need for profiling SCITT or describing how to register
 One or more Standards Track RFC(s) that identify and reuse existing or specify new IETF data models that can represent audit information about agents and delegated systems (e.g., interaction records, references to the identities of participating entities, delegation context, authorization state over time, or action provenance). 
 The record format specified in the VCON WG should be considered for auditing and the AUDIT WG should collaborate with the VCON WG on auditing-related requirements on the record format.
 This applies in general - if existing data models are identified, the AUDIT working group might create profiles that scope them to a degree of disclosure that is appropriate for audits.
+The first data model is expected to be a record of an agent action: the acting entity, a reference to the user or other party it acted on behalf of, the authorization and delegation it acted under, and the effect that followed.
+Each specification of an audit record data model will define a verification procedure that a party holding only the records and pinned verification material (such as keys and transparency log checkpoints) can run offline, without contacting the record producer or its operator.
+The group may also define online verification profiles.
+Each audit record data model will be accompanied by test vectors that give the expected verification result for valid and invalid records.
 The group will work on the minimal set of audit information and consider a registry to enable experimentation and fast deployment for additional data models.
 The working group may also define protocol-independent data representations intended for use by non-IETF logging, telemetry, or audit systems, while avoiding standardization of those external systems themselves.
 
@@ -91,3 +95,11 @@ One or more Standards Track RFCs specifying profiles of, extensions to, or embod
 Whether this work is done in this working group or the respective protocol maintenance group depends on the protocols and needs to be considered on a case by case basis.
 The working group may also define protocol-independent data representations intended for use by non-IETF logging, telemetry, or audit systems, while avoiding standardization of those external systems themselves.
 
+## Milestones
+
+* Mar 2027: Adopt a working group document for the architecture (deliverable 1)
+* Jul 2027: Adopt a working group document for the first audit record data model, with its verification procedure and test vectors (deliverable 2)
+* Nov 2027: Adopt working group document(s) for protocol extensions or profiles (deliverable 3)
+* Mar 2028: Submit the architecture to the IESG for publication as Informational
+* Jul 2028: Submit the first audit record data model to the IESG for publication as Proposed Standard
+* Nov 2028: Submit the protocol extensions or profiles to the IESG for publication as Proposed Standard
