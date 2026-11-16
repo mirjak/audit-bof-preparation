@@ -24,7 +24,7 @@ The work will include a reference architecture, the necessary data representatio
 
 * Interoperable communication mechanism containing an identifier scoped to the interaction to link user intent declarations to resulting system actions across protocol and administrative boundaries. Carrying this identifier in each record enables cross-domain agent auditing over the whole action chain, including subagents or tool calls in other domains. 
 * Records formats that capture the delegation chain, authorization state over time, and identity transitions, enabling attribution of actions to a specific user, agent instance, or delegation context by extending or adapting existing identity and authorization mechanisms.
-* Mechanism and guidance for selective disclosure of audit data such that it remains interpretable across systems without shared assumptions and still protect user privacy.
+* Mechanisms and guidance for selective disclosure of audit data such that it remains interpretable across systems without shared assumptions and still protect user privacy.
 
 Further, audit information, and its integrity, must be verifiable by a party that trusts neither the agent nor its operator. That property is what separates audit records from most existing log mechanisms.
 
