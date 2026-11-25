@@ -3,14 +3,20 @@
 Autonomous and semi-autonomous software agents, including those based on LLM techniques, are increasingly deployed to act on behalf of users, organizations, and services across the Internet.
 These agents interact across multiple administrative or trust domains and can initiate actions without direct human oversight at each step.
 
-This introduces challenges for auditability, accountability, and transparency, including:
+Establishing what an agent did on someone's behalf, when that is questioned by a party that did not operate the agent, is the initial problem of interest for this working group.
 
-* Difficulty attributing actions to a specific user, agent instance, or delegation context
-* Loss of visibility across long-running or distributed workflows
-* Inconsistent capture of delegation relationships, dynamic authorization context, and identity transitions
-* Lack of interoperable means to exchange or verify audit-relevant information about the participating agents and their interactions across domains
+The parties to such an interaction (the principal the agent acts for, the services it dealt with, and auditors acting for any of them) may need evidence of what the agent was asked to do, what it did at each boundary it crossed, and on whose authority.
+Operators already record much of this in logging and telemetry systems built for their own use.
+Such records are trusted because of who keeps them, and that trust does not carry across operators: one party cannot tell whether another's records were altered, cut short or selectively produced, and records kept by different operators are hard to tie to the same interaction.
 
-To support governance, compliance, transparency, and trust in such environments, auditing is required that collects and correlates evidence across participating domains rather than relying solely on local agent logs, where no single party has complete visibility into a multi-domain interaction.
+Verifiable audit records allow these problems to be detected after the fact, so that they can be resolved by other means: by agreement, through dispute processes, or under law.
+Audit records in this sense are:
+
+* Verifiable: a party that trusts neither the agent nor its operator can check that a record is intact, has not been cut short, and matches what other parties were shown.
+* Linkable: records kept by different operators can be tied to the same interaction.
+* Minimal: records carry commitments to the content they describe rather than the content itself; content reaches a party only as far as its role in the interaction requires.
+* Deployable: records can be derived from the logs operators already keep.
+
 The scope of such auditing is the observable behavior of agents, including user intent declarations, agent or tool interactions, invoked or declined actions, exchanged data, and resulting outcomes across trust boundaries, but not the auditing of the underlying AI model, training data, or inference mechanisms.
 
 The initial scope of the work will focus on post-hoc auditing.
@@ -23,8 +29,6 @@ Auditing must therefore capture authorization as a time-evolving state and corre
 
 Additionally, agent behavior may be non-deterministic and not fully predefined, requiring auditing mechanisms to capture execution context and structure as they emerge. 
 Auditing must also distinguish between user, agent, and service identities, and ensure audit data can be selectively disclosed such that it remains interpretable across systems without shared assumptions.
-
-Further, audit information, and its integrity, must be verifiable by a party that trusts neither the agent nor its operator. That property is what separates audit records from most existing log mechanisms.
 
 ## Scope and Goals
 
